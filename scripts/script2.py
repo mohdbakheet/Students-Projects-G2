@@ -117,7 +117,7 @@ def fit_parameters(weeks_obs, cases_obs, N,
         lower = [0, 0, 1/12, 0.05, 0.0001, 0.01, 0]
         upper = [3, 3, 1/2, 1.0, 0.2, 1.0, 2.0]
         bounds = (lower, upper)
-      def fit_func_short(weeks_input, beta1, beta2, sigma, gamma, mu, delta, eta):
+        def fit_func_short(weeks_input, beta1, beta2, sigma, gamma, mu, delta, eta):
         try:
             weekly_cases, _, _, _, _, _, _, _, _, _ = simulate_seicr_ode(
                 weeks_input, N, beta1, beta2, sigma, gamma, mu, delta, eta,
