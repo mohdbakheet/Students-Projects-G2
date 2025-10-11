@@ -21,12 +21,12 @@ C (environmental *V. cholerae*), A (cum. infections), D (cum. deaths).
 Time unit = **weeks**.
 
 Force of infection:
-\[
+$$
 \lambda(t) = (1-u_\text{vac})\left[\beta_1 \frac{I}{N} + \beta_2 \frac{C}{C+1}\right]
-\]
+$$
 
 Dynamics:
-\[
+$$
 \begin{aligned}
 \dot S &= -\lambda S, \\
 \dot E &= \lambda S - \sigma E, \\
@@ -36,7 +36,7 @@ Dynamics:
 \dot A &= \sigma E, \qquad
 \dot D = \mu_\text{eff} I.
 \end{aligned}
-\]
+$$
 
 **Controls (constant in `scenarios.py`):**
 - Vaccination / susceptibility reduction \(u_\text{vac}\in[0,1]\)
